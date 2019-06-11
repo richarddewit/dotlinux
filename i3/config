@@ -44,8 +44,8 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym Mod1+space exec --no-startup-id i3-dmenu-desktop --dmenu='~/dotfiles/i3/scripts/rofi-dmenu.sh'
-bindsym Mod1+Shift+space exec --no-startup-id ~/dotfiles/i3/scripts/rofi-windows.sh
+bindsym Mod1+space exec --no-startup-id i3-dmenu-desktop --dmenu='~/dotmanjaro/i3/scripts/rofi-dmenu.sh'
+bindsym Mod1+Shift+space exec --no-startup-id ~/dotmanjaro/i3/scripts/rofi-windows.sh
 
 # change focus
 bindsym $mod+h focus left
@@ -236,7 +236,7 @@ set $shutdown_yes_action exec --no-startup-id systemctl poweroff, mode "default"
 set $no_action mode "default"
 
 mode $mode_system {
-    bindsym l exec --no-startup-id ~/dotfiles/i3/scripts/lock, mode "default"
+    bindsym l exec --no-startup-id ~/dotmanjaro/i3/scripts/lock, mode "default"
     bindsym s mode $mode_system_suspend
     bindsym e mode $mode_system_logout
     bindsym r mode $mode_system_reboot
@@ -347,7 +347,7 @@ bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -S
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -SIGRTMIN+10 i3blocks
 
 # Autostart applications
-exec_always --no-startup-id ~/dotfiles/i3/i3blocks.sh > ~/.config/i3/i3blocks.conf
+exec_always --no-startup-id ~/dotmanjaro/i3/i3blocks.sh > ~/.config/i3/i3blocks.conf
 exec_always --no-startup-id numlockx on
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id xrdb ~/.Xresources
@@ -358,7 +358,7 @@ exec_always --no-startup-id xset r rate 200 50
 exec --no-startup-id xset dpms 0 0 900
 exec --no-startup-id xinput set-prop 11 155 2.2, 0, 0, 0, 2.2, 0, 0, 0, 1
 exec --no-startup-id killall dunst; /usr/lib/xfce4/notifyd/xfce4-notifyd
-exec --no-startup-id ~/dotfiles/bin/is_laptop && xfce4-power-manager
+exec --no-startup-id ~/dotmanjaro/bin/is_laptop && xfce4-power-manager
 exec --no-startup-id thunar --daemon
 exec_always --no-startup-id xbanish
 exec --no-startup-id udiskie
@@ -366,7 +366,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id dropbox
 # exec --no-startup-id davmail
-exec --no-startup-id xautolock -time 15 -locker ~/dotfiles/i3/scripts/lock
+exec --no-startup-id xautolock -time 15 -locker ~/dotmanjaro/i3/scripts/lock
 exec --no-startup-id $kbd_querty
 # exec --no-startup-id setxkbmap -option 'caps:ctrl_modifier'
 # exec --no-startup-id xcape -e 'Caps_Lock=Escape'

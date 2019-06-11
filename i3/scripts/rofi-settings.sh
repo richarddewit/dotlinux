@@ -22,7 +22,7 @@ c_magenta_l="b294bb"
 c_cyan_d="8abeb7"
 c_cyan_l="8abeb7"
 
-tod=`~/dotfiles/i3/scripts/timeofday.sh`
+tod=$(~/dotmanjaro/i3/scripts/timeofday.sh)
 
 # Uncomment a tod to test
 # tod="Late Night"
@@ -33,37 +33,37 @@ tod=`~/dotfiles/i3/scripts/timeofday.sh`
 # tod="Evening"
 # tod="Night"
 
-bg="$c_background"  # Default background for undefined times of day
+bg="$c_background" # Default background for undefined times of day
 fg="$c_foreground"
 case $tod in
-  "Late Night")
-    bg="$c_black_d"
-    fg="$c_black_l"
-    ;;
-  "Early Morning")
-    bg="$c_blue_d"
-    fg="$c_black_d"
-    ;;
-  "Morning")
-    bg="$c_cyan_d"
-    fg="$c_white_l"
-    ;;
-  "Afternoon")
-    bg="$c_white_l"
-    fg="$c_black_l"
-    ;;
-  "Late Afternoon")
-    bg="$c_yellow_d"
-    fg="$c_black_d"
-    ;;
-  "Evening")
-    bg="$c_black_l"
-    fg="$c_yellow_d"
-    ;;
-  "Night")
-    bg="$c_black_d"
-    fg="$c_blue_l"
-    ;;
+"Late Night")
+  bg="$c_black_d"
+  fg="$c_black_l"
+  ;;
+"Early Morning")
+  bg="$c_blue_d"
+  fg="$c_black_d"
+  ;;
+"Morning")
+  bg="$c_cyan_d"
+  fg="$c_white_l"
+  ;;
+"Afternoon")
+  bg="$c_white_l"
+  fg="$c_black_l"
+  ;;
+"Late Afternoon")
+  bg="$c_yellow_d"
+  fg="$c_black_d"
+  ;;
+"Evening")
+  bg="$c_black_l"
+  fg="$c_yellow_d"
+  ;;
+"Night")
+  bg="$c_black_d"
+  fg="$c_blue_l"
+  ;;
 esac
 
 monitor=-4
@@ -76,4 +76,3 @@ font="Terminus (TTF) bold 24"
 padding=300
 separator="dash"
 opacity=85
-

@@ -68,7 +68,7 @@ cat <<GLOBAL
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=~/dotfiles/i3/scripts/i3blocks/\$BLOCK_NAME
+command=~/dotmanjaro/i3/scripts/i3blocks/\$BLOCK_NAME
 full_text=■
 color=$base05
 markup=none
@@ -86,7 +86,6 @@ $separator
 $separator
 
 GLOBAL
-
 
 cat <<NETWORK
 # Network interface monitoring
@@ -111,7 +110,6 @@ $separator
 
 NETWORK
 
-
 cat <<CPU
 # CPU usage
 #
@@ -132,7 +130,6 @@ align=right
 $separator
 
 CPU
-
 
 cat <<MEMORY
 # Memory usage
@@ -155,8 +152,7 @@ $separator
 
 MEMORY
 
-
-~/dotfiles/bin/is_laptop && cat <<BATTERY
+~/dotmanjaro/bin/is_laptop && cat <<BATTERY
 # Battery
 #
 # The type defaults to "mem" if the instance is not specified.
@@ -170,7 +166,6 @@ interval=15
 $separator
 
 BATTERY
-
 
 cat <<DISK
 # Disk usage
@@ -190,7 +185,6 @@ $separator
 
 DISK
 
-
 lsblk | grep -q /home && cat <<DISKHOME
 [label disk home]
 full_text=$icon_disk$icon_home
@@ -203,7 +197,6 @@ interval=10
 $separator
 
 DISKHOME
-
 
 cat <<VOLUME
 # Volume indicator
@@ -247,7 +240,6 @@ command=date '+%H:%M'
 interval=5
 
 DATETIME
-
 
 cat <<OTHER
 # Generic media player support
@@ -293,4 +285,3 @@ cat <<OTHER
 $separator
 
 OTHER
-
