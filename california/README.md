@@ -18,8 +18,8 @@ The 2 files in this folder are what's missing from the installation PKGBUILD
 To use these files, simply let the sources in PKGBUILD point to:
 
 ```shell
-	'https://raw.githubusercontent.com/richarddewit/dotfiles/master/california/0002-Build-with-evolution-data-server-3.13.90.patch'
-	'https://raw.githubusercontent.com/richarddewit/dotfiles/master/california/california-0.4.0-libical-3.0.patch'
+	'https://raw.githubusercontent.com/richarddewit/dotmanjaro/master/california/0002-Build-with-evolution-data-server-3.13.90.patch'
+	'https://raw.githubusercontent.com/richarddewit/dotmanjaro/master/california/california-0.4.0-libical-3.0.patch'
 ```
 
 You can do this like so (I use `yay` as AUR package manager):
