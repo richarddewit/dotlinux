@@ -325,7 +325,7 @@ bindsym $mod+Shift+F3 --release exec --no-startup-id gksu $filemanager
 # bindsym Print exec --no-startup-id i3-scrot
 # bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 # bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym Print exec --no-startup-id flameshot full -p ~/Pictures/screenshots/
+# bindsym Print exec --no-startup-id flameshot full -p ~/Pictures/screenshots/
 bindsym $mod+Print --release exec --no-startup-id flameshot screen -p ~/Pictures/screenshots
 bindsym $mod+Shift+Print --release exec --no-startup-id flameshot gui -p ~/Pictures/screenshots
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
