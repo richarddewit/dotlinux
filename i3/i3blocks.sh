@@ -77,7 +77,7 @@ separator_block_width=5
 
 # Application title
 [title]
-command=xtitle -st 65
+#command=xtitle -st 65
 interval=persist
 color=$base0C
 

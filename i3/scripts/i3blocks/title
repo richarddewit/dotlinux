@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+get_title() {
+  lastpid=""
+  xprop -spy -root -notype _NET_ACTIVE_WINDOW \
+    | while read -r winid; do
+    if ps -p $lastpid  >/dev/null 2>&1; then
+      kill $lastpid
+    fi
+    winid="${winid##* }"
+    if [ "$winid" = "0x0" ]; then	# empty desktop
+      echo
+    else
+      xprop -spy -id "$winid" -notype _NET_WM_NAME &
+      lastpid=$!
+    fi
+  done 2>/dev/null \
+    | while read -r line; do
+    echo "$line" | awk -v len=65 '{
+      gsub(/^_NET_WM_NAME = "/, " ", $0)
+      gsub(/"$/, " ", $0)
+      {if (length($0) > len) print substr($0, 0, len-1)"…"; else print;}
+    }'
+  done
+}
+
+get_title
