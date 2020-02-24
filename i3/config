@@ -315,7 +315,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $kbd_querty  "setxkbmap -layout 'us' -variant 'alt-intl-unicode' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escape'"
+set $kbd_qwerty  "setxkbmap -layout 'us' -variant 'alt-intl-unicode' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escape'"
 set $kbd_colemak "setxkbmap -layout 'colemak_DvbgHm' -variant 'colemak' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escape'"
 
 # Start Applications
@@ -331,7 +331,7 @@ bindsym $mod+Shift+Print --release exec --no-startup-id flameshot gui -p ~/Pictu
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Scroll_Lock --release exec --no-startup-id $calculator
 
-bindsym $mod+grave --release exec --no-startup-id $kbd_querty
+bindsym $mod+grave --release exec --no-startup-id $kbd_qwerty
 bindsym $mod+Shift+grave --release exec --no-startup-id $kbd_colemak
 
 # Media keys
@@ -365,9 +365,8 @@ exec --no-startup-id udiskie
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id dropbox
-# exec --no-startup-id davmail
 exec --no-startup-id xautolock -time 15 -locker ~/dotmanjaro/i3/scripts/lock
-exec --no-startup-id $kbd_querty
+exec --no-startup-id $kbd_qwerty
 # exec --no-startup-id setxkbmap -option 'caps:ctrl_modifier'
 # exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 exec --no-startup-id aplay -q ~/Music/The-Microsoft-Sound.wav
