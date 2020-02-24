@@ -365,6 +365,7 @@ exec --no-startup-id udiskie
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id dropbox
+exec --no-startup-id xflux -l 51.46 -g 5.79
 exec --no-startup-id xautolock -time 15 -locker ~/dotmanjaro/i3/scripts/lock
 exec --no-startup-id $kbd_qwerty
 # exec --no-startup-id setxkbmap -option 'caps:ctrl_modifier'
