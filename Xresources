@@ -51,7 +51,7 @@
 *.color21:      base06
 
 ! Xcursor --------------------------------------------------------------------
-Xcursor.theme: Adwaita
+Xcursor.theme: Breeze
 Xcursor.size: 24
 
 ! Font settings --------------------------------------------------------------
