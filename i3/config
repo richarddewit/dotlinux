@@ -345,6 +345,9 @@ bindsym XF86HomePage --release exec --no-startup-id $browser
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -SIGRTMIN+10 i3blocks
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
 # Autostart applications
 exec_always --no-startup-id ~/dotmanjaro/i3/i3blocks.sh > ~/.config/i3/i3blocks.conf
