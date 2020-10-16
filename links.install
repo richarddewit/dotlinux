@@ -3,12 +3,12 @@
 # Links
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ ! ${XDG_CONFIG_HOME+x} ]]; then XDG_CONFIG_HOME="$HOME/.config"; fi
-mkdir -p $XDG_CONFIG_HOME/{i3,nvim,compton,gtk-3.0,termite,xfce4/terminal,ranger,Dharkael}
+mkdir -p $XDG_CONFIG_HOME/{i3,nvim,compton,gtk-3.0,termite,xfce4/terminal,ranger,flameshot}
 
 ## General
 ln -sf $dir/Xresources $HOME/.Xresources
 ln -sf $dir/config/ranger_rc.conf $XDG_CONFIG_HOME/ranger/rc.conf
-ln -sf $dir/config/flameshot.ini $XDG_CONFIG_HOME/Dharkael/flameshot.ini
+ln -sf $dir/config/flameshot.ini $XDG_CONFIG_HOME/flameshot/flameshot.ini
 
 ## i3wm
 #ln -sf $dir/i3/dunstrc $XDG_CONFIG_HOME/dunst/dunstrc
