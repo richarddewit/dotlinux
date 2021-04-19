@@ -37,3 +37,5 @@ ColorCursor=x
 CommandLoginShell=TRUE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=FALSE
+ScrollingOnOutput=FALSE
+
