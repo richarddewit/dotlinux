@@ -2,21 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DIR/rofi-settings.sh
+mkdir -p $HOME/.config/rofi
+bg=$bg fg=$fg red=$c_red_d envsubst < $DIR/rofi-config.rasi > $HOME/.config/rofi/config.rasi
 
-rofi \
-  -i \
-  -show window \
-  -show-icons \
-  -p 'λ ' \
-  -fullscreen \
-  -m $monitor \
-  -hide-scrollbar \
-  -color-window "$color_window" \
-  -color-normal "$color_normal" \
-  -location $location \
-  -lines $lines \
-  -bw $border_width \
-  -font "$font" \
-  -padding $padding \
-  -separator-style $separator \
-  -opacity $opacity
+rofi -i -show window
