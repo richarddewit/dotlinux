@@ -316,8 +316,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $kbd_qwerty  "setxkbmap -layout 'us' -variant 'alt-intl-unicode' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escape'"
-set $kbd_colemak "setxkbmap -layout 'colemak_DvbgHm' -variant 'colemak' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escape'"
+set $kbd_qwerty  "setxkbmap -layout 'us' -variant 'alt-intl-unicode' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escape'; notify-send 'qwerty'"
+set $kbd_colemak "setxkbmap -layout 'colemak_DvbgHm' -variant 'colemak' -option 'caps:ctrl_modifier'; xcape -e 'Caps_Lock=Escale'; notify-send 'colemak'"
 
 # Start Applications
 bindsym $mod+F2 --release exec --no-startup-id $browser
