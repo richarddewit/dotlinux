@@ -3,7 +3,7 @@
 # Links
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ ! ${XDG_CONFIG_HOME+x} ]]; then XDG_CONFIG_HOME="$HOME/.config"; fi
-mkdir -p $XDG_CONFIG_HOME/{i3,nvim,compton,gtk-3.0,termite,xfce4/terminal,ranger,flameshot,wezterm}
+mkdir -p $XDG_CONFIG_HOME/{i3,nvim,compton,gtk-3.0,termite,xfce4/terminal,ranger,flameshot}
 
 ## General
 ln -sf $dir/Xresources $HOME/.Xresources
@@ -18,7 +18,6 @@ ln -sf $dir/i3/config $XDG_CONFIG_HOME/i3/config
 ## Terminal
 # ln -sf $dir/config/termite-config $XDG_CONFIG_HOME/termite/config
 ln -sf $dir/config/xfce4-terminalrc $XDG_CONFIG_HOME/xfce4/terminal/terminalrc
-ln -sf $dir/config/wezterm.lua $XDG_CONFIG_HOME/wezterm/wezterm.lua
 
 ## Theming
 ln -sf $dir/gtk/gtk3.css $XDG_CONFIG_HOME/gtk-3.0/gtk.css
