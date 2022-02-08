@@ -212,6 +212,7 @@ for_window [class="Virtualbox Machine"] floating disable
 for_window [class="Xfburn"] floating enable
 for_window [class="Steam"] floating enable border normal
 for_window [class="(?i)AnyDesk"] floating enable border normal
+for_window [instance="Godot_Engine"] floating enable
 
 for_window [instance="crx_.*"] floating disable
 
@@ -327,8 +328,8 @@ bindsym $mod+Shift+F3 --release exec --no-startup-id gksu $filemanager
 # bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 # bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 # bindsym Print exec --no-startup-id flameshot full -p ~/Pictures/screenshots/
-bindsym $mod+Print --release exec --no-startup-id flameshot screen -p ~/Pictures/screenshots
-bindsym $mod+Shift+Print --release exec --no-startup-id flameshot gui -p ~/Pictures/screenshots
+bindsym $mod+Print --release exec --no-startup-id flameshot screen
+bindsym $mod+Shift+Print --release exec --no-startup-id flameshot gui
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Scroll_Lock --release exec --no-startup-id $calculator
 
