@@ -2,7 +2,7 @@
 
 LC_ALL=C date '+%a %d %b'
 
-calendar='/usr/bin/california'
+calendar="$(command -v gsimplecal)"
 case $BLOCK_BUTTON in
-  1) [ -f $calendar ] && $calendar ;;
+  1) [ -f "$calendar" ] && $calendar ;;
 esac
