@@ -18,8 +18,7 @@ sudo pacman -Sy --noconfirm --needed yay git vim the_silver_searcher sysstat fla
 yay -Sy --noconfirm --needed chromium-widevine {,python-}neovim dropbox xbanish gksu
 
 ## Apps
-sudo pacman -Sy --noconfirm --needed firefox firefox-i18n-en-gb firefox-i18n-en-us firefox-i18n-nl gnome-calculator evolution evolution-ews
-yay -Sy --noconfirm --needed california
+sudo pacman -Sy --noconfirm --needed firefox firefox-i18n-en-gb firefox-i18n-en-us firefox-i18n-nl gnome-calculator evolution evolution-ews gsimplecal
 
 ## Audio/Video
 sudo pacman -Sy --noconfirm --needed audacious mpv playerctl
@@ -57,4 +56,4 @@ touch ~/.screenlayout/screenlayout.sh
 ## Folders
 mkdir -p ~/Pictures/screenshots
 
-$dir/links.install
+"$dir/links.install"
