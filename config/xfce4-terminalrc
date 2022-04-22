@@ -26,7 +26,7 @@ MiscSlimTabs=FALSE
 MiscNewTabAdjacent=FALSE
 ScrollingUnlimited=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-FontName=JetBrains Mono for Powerline 8
+FontName=JetBrains Mono NL 8
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0,900000
 ColorForeground=#ebdbb2
@@ -38,4 +38,5 @@ CommandLoginShell=TRUE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=FALSE
 ScrollingOnOutput=FALSE
+MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
 
