@@ -38,7 +38,7 @@ sudo pacman -Sy --noconfirm --needed xfce4-terminal
 yay -Sy --noconfirm --needed powerline-fonts-git ttf-fira-code ttf-symbola terminus-font-ttf otf-font-awesome-4 ttf-font-awesome-4
 
 ## Theming
-sudo pacman -Sy --noconfirm --needed lxappearance
+sudo pacman -Sy --noconfirm --needed lxappearance gtk-engine-murrine
 yay -Sy --noconfirm --needed numix-gtk-theme numix-circle-arc-icons-git
 
 ## Shell/ZSH
