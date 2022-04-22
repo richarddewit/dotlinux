@@ -14,8 +14,8 @@ dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Manjaro packages
 ## Core
-sudo pacman -Sy --noconfirm --needed yay git vim the_silver_searcher sysstat flameshot udiskie thunar baobab htop
-yay -Sy --noconfirm --needed chromium-widevine {,python-}neovim dropbox xbanish gksu
+sudo pacman -Sy --noconfirm --needed yay git vim the_silver_searcher sysstat flameshot udiskie thunar baobab htop python python-pip
+yay -Sy --noconfirm --needed chromium-widevine {,python-}neovim dropbox xbanish gksu gconf
 
 ## Apps
 sudo pacman -Sy --noconfirm --needed firefox firefox-i18n-en-gb firefox-i18n-en-us firefox-i18n-nl gnome-calculator evolution evolution-ews gsimplecal
@@ -38,8 +38,8 @@ sudo pacman -Sy --noconfirm --needed xfce4-terminal
 yay -Sy --noconfirm --needed powerline-fonts-git ttf-fira-code ttf-symbola terminus-font-ttf otf-font-awesome-4 ttf-font-awesome-4
 
 ## Theming
-sudo pacman -Sy --noconfirm --needed numix-gtk-theme lxappearance
-yay -Sy --noconfirm --needed numix-circle-arc-icons-git
+sudo pacman -Sy --noconfirm --needed lxappearance
+yay -Sy --noconfirm --needed numix-gtk-theme numix-circle-arc-icons-git
 
 ## Shell/ZSH
 sudo pacman -Sy --noconfirm --needed zsh
